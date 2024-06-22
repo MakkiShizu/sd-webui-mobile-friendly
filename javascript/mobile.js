@@ -31,12 +31,11 @@
     static main() {
         ['txt', 'img'].forEach((mode) => {
             //是否处于紧凑型提示词布局(Compact prompt layout) 原代码未对紧凑型提示词布局做处理，这里在紧凑型提示词布局时仅添加按钮
-            const elementWithClass = document.querySelector('.svelte-vt1mxs.gap');
             const resultsElement = document.getElementById(mode + '2img_results');
             const isCompactLayout = resultsElement && resultsElement.querySelector('#' +mode+ '2img_generate_box');
 
-            if (isCompactLayout || elementWithClass.offsetWidth < 630) {
-                const referenceButton = document.getElementById(mode + '2img_generate');
+            const referenceButton = document.getElementById(mode + '2img_generate');
+            if (isCompactLayout) {
                 OnTheGo.addToTopButton(referenceButton);
                 return;
             }//only button
@@ -63,7 +62,7 @@
             const settings = document.getElementById(mode + '2img_settings');
             settings.style.width = '200%';//下方设置排布铺满
 
-            OnTheGo.addToTopButton(generate_btn);
+            OnTheGo.addToTopButton(referenceButton);
         });
     }
 }
