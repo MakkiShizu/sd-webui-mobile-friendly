@@ -13,9 +13,9 @@ This is an extension for the [Automatic1111 Webui](https://github.com/AUTOMATIC1
 5. Center the buttons in a `form`
 
 ### Changes
-1. Modified the style of the "jump to top" button at the bottom, adding a scroll animation
+1. Modified the style of the 'jump to top' button at the bottom, adding a scroll animation and fixing its position relative to the viewport.
 2. Fixed the image generation box layout for the current Webui version
-3. Made some adjustments to the compact prompt layout, adding the "to top" button only in this mode
+3. Made some adjustments to the compact prompt layout,only the 'to top' button is added in this mode.
 
 #### Installation
 1. Navigate to the `extensions/` directory.
