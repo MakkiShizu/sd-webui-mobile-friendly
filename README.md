@@ -12,18 +12,19 @@ This is an extension for the [Automatic1111 Webui](https://github.com/AUTOMATIC1
 4. Increase the padding between sliders
 5. Center the buttons in a `form`
 
-### Changes
+## Changes
 1. Modified the style of the 'jump to top' button at the bottom, adding a scroll animation and fixing its position relative to the viewport.
 2. Fixed the image generation box layout for the current Webui version
 3. Made some adjustments to the compact prompt layout,only the 'to top' button is added in this mode.
 
-#### Installation
+## Installation
 1. Navigate to the `extensions/` directory.
 2. Run the following command to clone the repository:
     ```bash
-    git clone "https://github.com/MakkiShizu/sd-webui-mobile-friendly.git"
+    git clone https://github.com/MakkiShizu/sd-webui-mobile-friendly.git
     ```
 
+### example
+![image](./exampleimg/1.png)
+![image](./exampleimg/2.png)
 <hr>
-
-<sup>This extension doesn't magically make the Webui run on mobile. It is meant for mobile usage enabled by the `--listen` launch argument.</sup>
